@@ -1,0 +1,117 @@
+.hidden {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    animation: fadeIn .5s linear;
+}
+
+#clock {
+    font-size: 65px;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 15px;
+    padding-top: 15px;
+}
+
+#greeting {
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    margin: 0 auto 20px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px;
+    font-size: 15px;
+}
+input::placeholder {
+    color: #fff;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+}
+
+#login-form input {
+    width: 220px;
+    height: 30px;
+    font-size: 20px;
+}
+#login-form input::placeholder {
+    font-size: 20px;
+}
+
+#todo-list {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: .8;
+}
+#todo-list::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+#todo-list::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+}
+#todo-list li {
+    margin: 0 auto 10px;
+}
+#todo-list button {
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+
+#quote {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#weather {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+}
